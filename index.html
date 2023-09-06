@@ -17,10 +17,15 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- script-->
     <script src="./js/main.js" defer></script>
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
-    <ul>
-      <li></li>
-    </ul>
+    <div id="app">
+      <ul>
+        <li v-for="index in 10">email = {{email}}</li>
+        <h3>{{generateEmail()}}</h3>
+      </ul>
+    </div>
   </body>
 </html>
