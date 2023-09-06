@@ -25,4 +25,16 @@ createApp({
       }
     },
   },
+
+  mounted() {
+    this.generateEmail();
+  },
 }).mount("#app");
+
+//     axios
+//       .get("https://flynn.boolean.careers/exercises/api/random/mail")
+//       .then((response) => {
+//         let randomEmail = response.data.response;
+//         this.email = randomEmail;
+//       });
+//   },
